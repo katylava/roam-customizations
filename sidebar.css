@@ -1,0 +1,25 @@
+.roam-body .roam-app .roam-sidebar-container {
+  background-color: rgb(10,88,69);
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
+  color: #BBCA98;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  font-size: 1rem;
+  color: #ccc;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  font-size: 1rem;
+  color: #ccc;
+}
+.roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  background-color: rgb(10,88,69);
+  font-weight: bold;
+}
+.rm-db-title {
+  font-size: 1rem;
+  color: #ccc;
+}
+#app > div > div > div.roam-sidebar-container.noselect > div > div.flex-h-box > span::before {
+  color: #BBCA98 !important;
+}

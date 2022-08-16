@@ -1,0 +1,21 @@
+body {
+  line-height: 2;
+  font-family: "Avenir Next";
+}
+
+.roam-block {
+  cursor: pointer;
+}
+
+div, textarea,
+.rm-level1, .rm-heading-level-1>.rm-block__self .rm-block__input{
+  font-family: "Avenir Next";
+}
+
+textarea.rm-block-input {
+  color: #666;
+  cursor: text;
+}
+.rm-page-ref {
+  font-weight: 500;
+}

@@ -1,0 +1,65 @@
+.rm-page-ref--tag {
+  color: rgb(17,145,114);
+}
+
+.rm-page-ref--tag[data-tag="soon"] {
+  background-color: #FF5722;
+  color: white;
+  border-radius:  .3em;
+  padding: 0 .2em;
+}
+
+.rm-page-ref--tag[data-tag="waiting"] {
+  background-color: #FFC107;
+  color: #FFFFFF;
+  border-radius:  .3em;
+  padding: 0 .2em;
+}
+
+span.rm-page-ref--tag[data-tag="due"] {
+  background-color: rgb(220,14,14);
+  color: white;
+  padding: 0 0 0 .4em;
+  border-radius: .5em 0 0 .5em;
+  display: inline-block;
+  font-weight: bold;
+}
+
+span.rm-page-ref--tag[data-tag="due"]::before {
+  content: "⚠ ";
+}
+span.rm-page-ref--tag[data-tag="due"]::after {
+  content: " ";
+}
+
+span.rm-page-ref--tag[data-tag="due"] + span[data-link-uid] > .rm-page-ref {
+  background-color: rgb(220,14,14);
+  color: white;
+  padding: 0 .4em 0 0;
+  border-radius: 0 .5em .5em 0;
+  display: inline-block;
+  font-weight: bold;
+}
+
+span.rm-page-ref--tag[data-tag="due"] + span[data-link-uid] > .rm-page-ref__brackets {
+  display: none;
+}
+
+span.rm-page-ref--tag[data-tag="Attention"],
+span.rm-page-ref--tag[data-tag$="next"] {
+   background: linear-gradient(#F6563D, #E91E63);
+   border-radius: 1em;
+   color: white;
+   font-size: 1em;
+   padding: .2em .6em .3em .5em;
+   box-shadow: 0px 1px 2px 0px #000000;
+   text-shadow: 0px 1px 1px #000000;
+}
+
+span.rm-page-ref--tag[data-tag="Attention"]:hover,
+span.rm-page-ref--tag[data-tag="next"]:hover {
+   background: linear-gradient(#E91E63, #F6563D);
+   box-shadow: 0px 1px 1px 0px #000000;
+   text-decoration: none;
+   text-shadow: 0px 0px 0px #000000;
+}

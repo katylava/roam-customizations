@@ -1,0 +1,32 @@
+/* for some reason roam gives blockquotes extra margin, which makes them not flow well with their children like normal blocks */
+blockquote.rm-bq {
+  margin-bottom: 0px;
+}
+
+code {
+  color: rgb(223,78,78);
+  font-family: "VictorMono Nerd Font";
+  font-weight: 600;
+}
+
+.roam-block .rm-code-block .cm-line {
+  font-family: "VictorMono Nerd Font";
+  cursor: text;
+  font-weight: 300;
+}
+
+.rm-highlight {
+  background: linear-gradient(to right, rgba(255,228,92,1) 0%, rgba(255,233,138,1) 25%, rgba(245,206,63,1) 51%, rgb(247,219,52) 76%, rgba(247,212,99,1) 100%);
+  border-radius: .3em;
+}
+
+a.rm-alias--external[href*="SE-"]::before,
+a.rm-alias--external[href*="METACON-"]::before,
+a.rm-alias--external[href*="LANE2-"]::before,
+a.rm-alias--external[href*="ARCH-"]::before,
+a.rm-alias--external[href*="PLAY-"]::before {
+  content: "🎟";
+  font-size: 1.3em;
+  vertical-align: bottom;
+  padding-right: .1em;
+}
