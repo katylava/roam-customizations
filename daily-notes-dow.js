@@ -2,7 +2,7 @@ dailyLogDateObserver = new MutationObserver(addDow)
 dailyLogDateObserver.observe(document, { childList: true, subtree: true });
 
 function addDow() {
-  const dateRegex = /^(January|February|March|April|May|June|July|August|September|October|November|December) (\d+)(\w\w), (\d\d\d\d)$/;
+  const dateRegex = /^([A-Z][a-z]+) (\d{1,2})(\w\w), (\d{4})$/;
 
   const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
